@@ -16,12 +16,12 @@ $(document).ready(function () {
 
     $("#btnLogin").click(function () {
         var userName = document.getElementById("userName").value;
-        var passcode = document.getElementById("passWord").value;
-        var save = document.getElementById("remember").checked;
+        var pwd = document.getElementById("passWord").value;
+        var remember = document.getElementById("remember").checked;
 
-        if (userName == loginInfo[0] && passcode == loginInfo[1]) {
+        if (userName == loginInfo[0] && pwd == loginInfo[1]) {
             alert("You are logged in");
-            if (save) {
+            if (remember === true) {
                 localStorage.setItem('userName', userName);
             } else {
                 localStorage.removeItem('userName');
@@ -29,6 +29,7 @@ $(document).ready(function () {
         } else {
             alert("Login Failed");
         }
+        // refrence from https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
         location.reload();
     });
 
@@ -44,10 +45,8 @@ $(document).ready(function () {
         people.name = document.getElementById("name").value;
         people.phone = document.getElementById("phone").value;
         people.age = document.getElementById("age").value;
-        // refrence from https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-radio-button-using-jquery.php
         people.group = $("input:radio[name=group]:checked").val()
         People.push(people);
-        // stringify to change into object
         localStorage.Peop = JSON.stringify(People);
         displayPeople();
     });
@@ -94,5 +93,4 @@ function displayPeople() {
             li.addClass('groupIII');
         }
     }
-
 }
