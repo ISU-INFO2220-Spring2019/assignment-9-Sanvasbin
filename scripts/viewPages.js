@@ -1,19 +1,25 @@
-﻿var People = [];
+﻿/*  Sabin Shrestha
+    INFO 2220
+    Prof.Jonathan Holmes
+    04 / 15 / 2019
+    Assignment 9
+    Purpose: A Javascript file to learn web storage
+*/
+var People = [];
 $(document).ready(function () {
 
     if (localStorage.userName != null) {
         $("#userName").val(localStorage.userName);
     }
-    //var profile = [{
-    //    userName: "tester",
-    //    passWord: "tested"
-    //}];
+
+    var loginInfo = ["tester", "tested"];
+
     $("#btnLogin").click(function () {
         var userName = document.getElementById("userName").value;
         var passcode = document.getElementById("passWord").value;
         var save = document.getElementById("remember").checked;
 
-        if (userName == "tester" && passcode == "tested") {
+        if (userName == loginInfo[0] && passcode == loginInfo[1]) {
             alert("You are logged in");
             if (save) {
                 localStorage.setItem('userName', userName);
@@ -54,7 +60,7 @@ $(document).ready(function () {
     if (localStorage.getItem("Peop") != null) {
         displayPeople();
     }
-    //clearing the data from local storage
+    
     $("#btnClearStorage").click(function () {
         localStorage.removeItem("Peop");
         location.reload();
@@ -66,6 +72,7 @@ $(document).ready(function () {
 
 });
 
+// function to help create li elements for displaying people
 function displayPeople() {
     var list = $("#list")
     list.empty();
