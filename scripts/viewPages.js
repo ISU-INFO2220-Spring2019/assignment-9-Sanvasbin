@@ -79,8 +79,8 @@ function displayPeople() {
     var data = JSON.parse(json);
     for (var i = 0; i < data.length; i++) {
         var li = $("<li></li>").addClass('best')
-            .text((data[i].name) + " " + (data[i].phone) + " " + (data[i].age) + " " + (data[i].group));
-        var btnEdit = $("<button> Edit</button>");
+            .text("Name: " + (data[i].name) + " " + "Phone: " + (data[i].phone) + " " + "Age: " + (data[i].age) + " " + "Group: " + (data[i].group));
+        var btnEdit = $("</br><button>Edit</button>");
         li.append(btnEdit);
         list.append(li);
         if (data[i].group == 1) {
