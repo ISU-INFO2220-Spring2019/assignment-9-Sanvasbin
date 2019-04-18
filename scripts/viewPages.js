@@ -29,7 +29,7 @@ $(document).ready(function () {
         } else {
             alert("Login Failed");
         }
-        // refrence from https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
+        // learned from https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
         location.reload();
     });
 
@@ -79,7 +79,7 @@ function displayPeople() {
     var data = JSON.parse(json);
     for (var i = 0; i < data.length; i++) {
         var li = $("<li></li>").addClass('best')
-            .text("Name: "(data[i].name) + " " + "Phone: " + (data[i].phone) + " " + "Age: " + (data[i].age) + " " + "Group: " +  (data[i].group));
+            .text((data[i].name) + " " + (data[i].phone) + " " + (data[i].age) + " " + (data[i].group));
         var btnEdit = $("<button> Edit</button>");
         li.append(btnEdit);
         list.append(li);
