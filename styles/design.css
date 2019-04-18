@@ -1,0 +1,36 @@
+﻿/*
+    Sabin Shrestha
+    INFO 2220
+    Prof. Jonathan Holmes
+    1/28/2019
+    Assignment 2 
+    Purpose: This is a stylesheet to help us learn about different styling techniques.
+*/
+a:hover {
+    color: #888888;
+}
+
+td:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: cell;
+}
+
+.success::before, .warning::before, .error::before {
+    content: "Message: ";
+}
+
+.special {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: overline;
+    quotes: """ """;
+}
+
+.special:before{
+    content: open-quote;
+}
+
+.special:after{
+    content:close-quote;
+}

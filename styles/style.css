@@ -1,0 +1,107 @@
+﻿/*
+    Sabin Shrestha
+    INFO 2220
+    Prof. Jonathan Holmes
+    1/28/2019
+    Assignment 2 
+    Purpose: This is a stylesheet to help us learn about different styling techniques.
+*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+p{
+    padding: 2ex;
+}
+
+span {
+    font-weight: bold;
+    color: lime;
+}
+
+table span {
+    text-decoration: underline;
+}
+
+a {
+    color: #ff8800;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff8800;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #888888;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+th {
+    background-color: #ff8800;
+    color: #ffffff;
+}
+
+table tr {
+    font-size: .9em;
+    background-color: #eeeeee;
+}
+
+table .other {
+    background-color: #dddddd; 
+}
+
+.success, .warning, .error {
+    border: solid;
+    border-width: 1px;
+    border-color: #aaaaaa;
+    font-weight: bold;
+    padding: .3em;
+    margin: .3em;
+}
+
+div .success {
+    color: #008800;
+    background-color: #f0fff0;
+    border-color: #008800;
+}
+
+div .warning {
+    color: #888800; /*sand font color*/
+    background-color: #fffff0;
+    border-color: #888800;
+}
+
+div .error {
+    color: #880000;
+    background-color: #fff0f0;
+    border-color: #880000;
+}
+
+.boldTitle{
+    font-weight:bold;
+}
+
+.login {
+    border: solid 5px red;
+    border-radius: 5px;
+    padding: 20px 0px 20px 10px;
+    margin-bottom: 20px;
+    color: aqua;
+    font-weight: bolder;
+    box-shadow: 5px 10px #aaaaaa;
+    width: 400px;
+    background-image: url(../images/login.jpg)
+}
+
+
+.userForm *{
+    background-color: white;
+    color: black;
+}
+

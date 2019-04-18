@@ -1,0 +1,75 @@
+﻿<!--Sabin Shrestha
+    April 15, 2018
+    INFO 2220
+    Prof. Jonathan Holmes
+    Assignment 9
+    Purpose: This is the assignment to get to know about the local storage.
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Starting Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/ajax.css" rel="stylesheet" />
+    <script src="scripts/viewPages.js"></script>
+</head>
+<body>
+    <div class="login">
+        <form method="post" action="">
+            <label for="userName">Username: </label><br />
+            <input type="text" id="userName" required="Required" /><br />
+            <label for="password">Password: </label><br />
+            <input type="password" id="passWord" required="Required" /><br />
+            <label>
+                <input id="remember" type="checkbox" checked="checked" name="remember"> Remember me
+            </label><br/>
+            <button id="btnForget">Forget Me</button>
+            <button id="btnLogin">Login</button>
+
+        </form>
+    </div>
+    <div>
+        <form class = "form" method="post" action="">
+            <table class="userForm">
+                <tr>
+                    <th><label for="name">Name: </label></th>
+                    <td><input type="text" name="name" id="name" /></td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Phone: </label></th>
+                    <td><input type="number" name="phone" id="phone" /></td>
+                </tr>
+                <tr>
+                    <th><label for="age">Age: </label></th>
+                    <td><input type="number" name="age" id="age" /></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <fieldset>
+                            <legend>Group</legend>
+                            <input type="radio" name="group" value="1" />1 <br />
+                            <input type="radio" name="group" value="2" />2<br />
+                            <input type="radio" name="group" value="3" />3
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <button id="btnAddPerson">Add Person</button>
+            <button id="btnClearStorage">Clear storage</button>
+        </form>
+    </div>
+    
+    <a href="storage.html">Storage List</a><br />
+    <ul id="list">
+        <li></li>
+    </ul>
+    <a href="index.html">Back To Assignment List</a>
+
+</body>
+</html>
+

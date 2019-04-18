@@ -1,0 +1,28 @@
+/*
+    Sabin Shrestha
+    INFO 2220
+    Prof. Jonathan Holmes
+    04/1/2019
+    Assignment 8
+    Purpose: This is a stylesheet to style the ajax.html file.
+*/
+.best{
+    text-align-last: center;
+    border: 1px solid;
+}
+
+.best{
+   list-style-type: none;
+}
+
+.groupI{
+    background-color: aqua;
+}
+
+.groupII{
+    background-color: rosybrown;
+}
+
+.groupIII{
+    background-color: bisque;
+}
